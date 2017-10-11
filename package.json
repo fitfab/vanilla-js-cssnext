@@ -1,0 +1,31 @@
+{
+  "name": "vanilla-js-cssnext",
+  "version": "0.0.1",
+  "description": "Setup to use vanilla JS and cssnext",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve --ignore ./node_modules --treeless ./",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "postcss",
+    "cssnext",
+    "webpack",
+    "js"
+  ],
+  "author": "Miguel Julio <mjulio@artnet.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "postcss": "^6.0.13",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-loader": "^2.0.7",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.7.1"
+  }
+}
