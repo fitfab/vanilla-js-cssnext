@@ -1,5 +1,53 @@
+
 .art-textfield {
-    & input {
-        border: 1px solid red;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+
+    & label {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transform: translate(0,10px);
+        transition: all .15s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        z-index: 0;
     }
+
+    & input {
+        font-size: 16px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--grayColor);
+        margin: 20px 0 0;
+        padding: 0 0 15px 0;
+        box-sizing: border-box;
+        width: 100%;
+        outline: none;
+        z-index: 10;
+        position: relative;
+        transition: all .15s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+
+        &:focus {
+            border-bottom: 1px solid var(--darkColor);
+        }
+        &:focus + label,
+        &.filled + label {
+            transform: translate(0px,-5px);
+            font-size: 12px;
+        }
+    }
+
+    & button {
+        display: block;
+        background: var(--darkColor);
+        font-size: var(--fontSize);
+        font-weight: 100;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        width: 150px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
 }

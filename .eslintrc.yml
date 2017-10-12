@@ -19,3 +19,7 @@ rules:
   semi:
     - error
     - never
+  no-process-exit:
+    - 0
+  no-process-env:
+    - 0

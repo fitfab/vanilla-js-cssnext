@@ -1,7 +1,9 @@
-
+@import "variables.css";
 @import "form.css";
 body {
     background: #5c8b94;
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
 
     & #app {
         background: #ffffff;
@@ -9,6 +11,10 @@ body {
         margin: 20px auto;
         border-radius: 4px;
         padding: 20px;
+        box-sizing: border-box;
+
+        max-width: 440px;
+        min-width: 300px;
 
     }
 }

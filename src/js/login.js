@@ -6,6 +6,19 @@ const Manage = (config) => {
     const disclaimer = document.createElement('p')
     disclaimer.innerHTML = `This is ${config}`
     AppView.appendChild(disclaimer)
+
+    const $input = document.querySelectorAll('input')
+    $input.forEach(input => {
+        console.log(input)
+    })
+    document.getElementById('theform').addEventListener('blur', function(event) {
+        console.log('input: ',event.target.value)
+        if (event.target.value !== ''){
+            event.target.classList.add('filled')
+        } else {
+            event.target.classList.remove('filled')
+        }
+    }, true)
 }
 
 document.onreadystatechange = () => {
