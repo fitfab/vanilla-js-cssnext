@@ -3,10 +3,12 @@ const path = require('path')
 
 
 module.exports = {
-
-    entry: path.resolve(__dirname,'./login.js'),
+    context: path.resolve(__dirname, 'src'),
+    entry: {
+        app: path.resolve(__dirname,'./src/js/login.js'),
+    },
     output: {
-        filename: 'login-prod.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {

@@ -1,7 +1,7 @@
 body {
     background: #5c8b94;
 
-    #app {
+    & #app {
         background: #ffffff;
         width: 60%;
         margin: 20px auto;
