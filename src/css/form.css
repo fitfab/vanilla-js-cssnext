@@ -1,0 +1,5 @@
+.art-textfield {
+    & input {
+        border: 1px solid red;
+    }
+}

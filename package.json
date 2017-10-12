@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "serve --ignore ./node_modules --treeless ./",
     "build": "webpack --config webpack.config.js",
+    "lint": "eslint --fix ./src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,9 +20,11 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "css-loader": "^0.28.7",
+    "eslint": "^4.8.0",
     "postcss": "^6.0.13",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",
