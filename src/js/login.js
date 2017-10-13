@@ -7,10 +7,6 @@ const Manage = (config) => {
     disclaimer.innerHTML = `This is ${config}`
     AppView.appendChild(disclaimer)
 
-    const $input = document.querySelectorAll('input')
-    $input.forEach(input => {
-        console.log(input)
-    })
     document.getElementById('theform').addEventListener('blur', function(event) {
         console.log('input: ',event.target.value)
         if (event.target.value !== ''){

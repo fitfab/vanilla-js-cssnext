@@ -1,0 +1,24 @@
+.tab-indicator {
+    position: relative;
+    height: 40px;
+    margin: 30px 0;
+
+    & .__tab {
+        display: block;
+        width: 50%;
+        text-align: center;
+        float: left;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--grayColor);
+    }
+
+    & .__tab-meter {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        border: none;
+        border-bottom: 3px solid var(--brandColor);
+    }
+}

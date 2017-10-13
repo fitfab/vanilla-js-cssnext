@@ -1,11 +1,16 @@
 @import "variables.css";
 @import "form.css";
+@import "tabs.css";
+
 body {
     background: #5c8b94;
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
 
     & #app {
+        & h1 {
+            text-align: center;
+        }
         background: #ffffff;
         width: 60%;
         margin: 20px auto;
