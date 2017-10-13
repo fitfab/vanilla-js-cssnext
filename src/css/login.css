@@ -4,7 +4,14 @@
 @import "tabs.css";
 
 body {
-    background: #5c8b94;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    overflow: hidden;
+
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
 
@@ -18,20 +25,22 @@ body {
     & #app {
         background: #ffffff;
         width: 60%;
-        margin: 20px auto;
+        margin: auto;
         border-radius: 4px;
-        padding: 20px;
         box-sizing: border-box;
-
         max-width: 440px;
         min-width: 300px;
         & h1 {
             text-align: center;
+            margin: 0;
         }
         & p {
             font-size: 12px;
             line-height: 22px;
             color: var(--grayColor);
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
