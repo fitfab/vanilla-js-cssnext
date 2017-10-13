@@ -29,6 +29,12 @@
         position: relative;
         transition: all .15s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus {
+            background: none;
+        }
+
         &:focus {
             border-bottom: 1px solid var(--darkColor);
         }
@@ -52,4 +58,26 @@
         text-transform: uppercase;
     }
 
+    @keyframes onAutoFillStart {
+    from {/**/}
+    to {/**/}
+    }
+
+    @keyframes onAutoFillCancel {
+    from {/**/}
+    to {/**/}
+    }
+    input:-webkit-autofill {
+        // Expose a hook for JavaScript when autofill is shown
+        // JavaScript can capture 'animationstart' events
+        animation-name: onAutoFillStart;
+
+        // Make the background color become yellow really slowly
+        transition: background-color 50000s ease-in-out 0s;
+    }
+    input:not(:-webkit-autofill) {
+        // Expose a hook for JS onAutoFillCancel
+        // JavaScript can capture 'animationstart' events
+        animation-name: onAutoFillCancel;
+    }
 }

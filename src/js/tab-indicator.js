@@ -7,6 +7,8 @@ const TabIndicator = () => {
 
     if (!$view.nav) {
         return
+    } else {
+        $view.meter.style.transform = `translate(${$view.active.offsetLeft}px, 0px)`
     }
 
     $view.nav.addEventListener('mouseenter', (event) => {

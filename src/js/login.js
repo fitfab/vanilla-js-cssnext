@@ -1,9 +1,11 @@
 import TabIndicator from './tab-indicator'
+import FixAutoFill from './auto-fill-fix'
 import '../css/login.css'
 
 const Manage = () => {
 
     TabIndicator()
+    FixAutoFill()
 
     document.getElementById('theform').addEventListener('blur', function(event) {
         if (event.target.value !== ''){
@@ -18,7 +20,7 @@ const Manage = () => {
 document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
         // execute app when dom is ready
-        Manage(document.readyState)
+        Manage()
     }
 }
 

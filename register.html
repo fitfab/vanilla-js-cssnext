@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Artnet | Login</title>
+    <title>Artnet | Regsiter</title>
     <script src="/dist/app.bundle.js"></script>
 </head>
 <body>
     <div id="app">
         <h1><img src="/dist/artnet-logo.beta.svg" alt="artnet beta"></h1>
         <div class="tab-indicator">
-            <a href="/index.html" class="__tab tab-active">login</a>
-            <a href="/register.html" class="__tab">Register</a>
-            <div class="__tab-meter ease-oc"></div>
+            <a href="/index.html" class="__tab">login</a>
+            <a href="/register.html" class="__tab tab-active">Register</a>
+            <div class="__tab-meter ease-oc" style="transform: translate(160px, 0px); width: 160px;"></div>
         </div>
         <form class="art-form" id="theform">
             <div class="art-textfield ease-oc">
-                <input type="text" required name="email">
-                <label>Email</label>
+                <input type="text" required name="fullName">
+                <label>Name</label>
+            </div>
+            <div class="art-textfield ease-oc">
+              <input type="text" required name="email">
+              <label>Email</label>
             </div>
 
             <div class="art-textfield ease-oc">
-                <input type="password" name="password">
-                <label>Password</label>
+              <input type="password" name="password">
+              <label>Password</label>
             </div>
             <p><a href="#">Forgot your password?</a></p>
             <div class="art-textfield ease-oc">
