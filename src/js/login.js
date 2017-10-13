@@ -1,4 +1,4 @@
-
+import TabIndicator from './tab-indicator'
 import '../css/login.css'
 
 const Manage = (config) => {
@@ -6,6 +6,8 @@ const Manage = (config) => {
     const disclaimer = document.createElement('p')
     disclaimer.innerHTML = `This is ${config}`
     AppView.appendChild(disclaimer)
+
+    TabIndicator()
 
     document.getElementById('theform').addEventListener('blur', function(event) {
         console.log('input: ',event.target.value)
