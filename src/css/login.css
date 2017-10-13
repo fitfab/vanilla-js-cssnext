@@ -8,10 +8,14 @@ body {
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
 
-    & #app {
-        & h1 {
-            text-align: center;
+    & a {
+        color: var(--grayColor);
+        &:hover {
+            text-decoration: underline;
         }
+    }
+
+    & #app {
         background: #ffffff;
         width: 60%;
         margin: 20px auto;
@@ -21,6 +25,13 @@ body {
 
         max-width: 440px;
         min-width: 300px;
-
+        & h1 {
+            text-align: center;
+        }
+        & p {
+            font-size: 12px;
+            line-height: 22px;
+            color: var(--grayColor);
+        }
     }
 }
