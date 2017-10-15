@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "serve --ignore ./node_modules --treeless ./",
-    "build": "webpack --config webpack.config.js",
+    "dev": "webpack -w --config webpack.config.js",
+    "prod": "webpack -p --config webpack.config.js",
     "lint": "eslint --fix ./src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
