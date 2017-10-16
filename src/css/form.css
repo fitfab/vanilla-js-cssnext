@@ -2,7 +2,7 @@
 .art-textfield {
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 
     & label {
         position: absolute;
@@ -15,6 +15,7 @@
     }
 
     & input {
+        font-family: var(--fontFamily);
         font-size: 16px;
         color: var(--darkColor);
         background: transparent;
@@ -46,11 +47,13 @@
     }
 
     & button {
+        font-family: var(--fontFamilyMedium);
         display: block;
-        background: var(--darkColor);
-        font-size: var(--fontSize);
+        font-size: 11px;
         font-weight: 100;
+        letter-spacing: 1px;
         color: #fff;
+        background: var(--darkColor);
         border: none;
         padding: 10px 20px;
         width: 150px;

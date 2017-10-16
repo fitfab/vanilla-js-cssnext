@@ -1,0 +1,17 @@
+/**
+ * Web Fonts setup
+ **/
+
+@font-face {
+    font-family: 'Sailec';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../../assets/webfonts/Sailec.woff')
+}
+
+@font-face {
+    font-family: 'Sailec Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../../assets/webfonts/Sailec-Medium.woff')
+}

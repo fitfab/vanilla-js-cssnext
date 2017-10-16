@@ -3,6 +3,7 @@
     --darkColor: #1E1E1E;
     --grayColor: #979797;
 
-    --fontFamily: Arial, Helvetica, sans-serif;
+    --fontFamily: 'Sailec', Arial, Helvetica, sans-serif;
+    --fontFamilyMedium: 'Sailec Medium', Arial, Helvetica, sans-serif;
     --fontSize: 16px;
 }
