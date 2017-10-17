@@ -57,8 +57,12 @@
         border: none;
         padding: 10px 20px;
         width: 150px;
+        height: 40px;
         text-align: left;
         text-transform: uppercase;
+        background-image: url('../../assets/images/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: 130px 50%;
     }
 
 }

@@ -25,7 +25,22 @@ body {
         text-transform: uppercase;
         position: absolute;
         top: 60px;
+
+
+        & .icon-arrow {
+
+            background-image: url('../../assets/images/arrow-black.svg');
+            background-position: 50%  50%;
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin-bottom: -1px;
+            margin-right: 20px;
+            height: 10px;
+            width: 7px;
+            transform: rotate(-180deg);
+        }
     }
+
 
     & .logo {
         width: 100%;
