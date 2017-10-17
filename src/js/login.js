@@ -1,6 +1,13 @@
+import 'babel-polyfill'
 import TabIndicator from './tab-indicator'
-import FixAutoFill from './auto-fill-fix'
+import {FixAutoFill} from './form'
 import '../css/login.css'
+
+// polyfill for IE to work with NodeList.forEach()
+(function () {
+    if ( typeof NodeList.prototype.forEach === "function" ) return false
+    NodeList.prototype.forEach = Array.prototype.forEach
+})()
 
 const Manage = () => {
 

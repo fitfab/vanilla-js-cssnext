@@ -12,11 +12,7 @@ body {
     max-width: 980px;
     min-width: 320px;
     margin: 0 auto;
-
     height:100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
 
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
@@ -47,8 +43,8 @@ body {
 
     & #app {
         background: #ffffff;
-        width: 60%;
-        margin: auto;
+        margin: 200px auto 0;
+        padding: 0 20px;
         border-radius: 4px;
         box-sizing: border-box;
         max-width: 320px;
