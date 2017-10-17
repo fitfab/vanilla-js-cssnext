@@ -58,14 +58,15 @@ body {
     & #app {
         background: #ffffff;
         margin: 200px auto 0;
-        padding: 0 20px;
+
         border-radius: 4px;
         box-sizing: border-box;
         max-width: 320px;
         min-width: 300px;
 
-        @media (width >= 300px) and (width <= 767px) {
+        @media (width <= 767px) {
             margin: 20px auto;
+            padding: 0 20px;
         }
 
         & h1 {
