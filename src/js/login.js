@@ -1,6 +1,6 @@
 import 'babel-polyfill'
 import TabIndicator from './tab-indicator'
-import {FixAutoFill} from './form'
+import { formInit } from './form'
 import '../css/login.css'
 
 // polyfill for IE to work with NodeList.forEach()
@@ -12,15 +12,8 @@ import '../css/login.css'
 const Manage = () => {
 
     TabIndicator()
-    FixAutoFill()
+    formInit()
 
-    document.getElementById('theform').addEventListener('blur', function(event) {
-        if (event.target.value !== ''){
-            event.target.classList.add('filled')
-        } else {
-            event.target.classList.remove('filled')
-        }
-    }, true)
 }
 
 // on DomReady init the app

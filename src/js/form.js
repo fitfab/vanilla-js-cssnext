@@ -21,17 +21,54 @@ export const FixAutoFill = () => {
 
 export const Validate = (event) => {
     event.preventDefault()
-    console.log(event.target)
+
+    const inputs = Array.from(event.target.elements)
+
+    inputs.forEach( input => {
+
+        if(input.name === 'email') {
+
+            if (!isEmail(input.value)) {
+                input.parentElement.classList.add('error')
+                input.nextElementSibling.innerHTML = 'Invalid Email'
+            } else {
+                input.parentElement.classList.remove('error')
+                input.nextElementSibling.innerHTML = 'Email'
+            }
+        }
+
+        if(input.name === 'password') {
+            if(!isPassword(input.value)){
+                input.parentElement.classList.add('error')
+                input.nextElementSibling.innerHTML = 'Invalid Password'
+            } else {
+                input.parentElement.classList.remove('error')
+                input.nextElementSibling.innerHTML = 'Password'
+            }
+        }
+    })
     return false
 }
 
-export const isEmail = (email) => {
-    const re = /\S+@\S+\.S+/
-    return re.test(email)
+export const isEmail = (value) => {
+    const re = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+    return re.test(value)
 }
 
-export const formSetup = (formName = 'form') => {
-    const $form = document.querySelector(formName)
+export const isPassword = (value) => {
+    const re = /^(?=.*\d).{8,15}$/
+    return re.test(value)
+}
+
+export const formInit = (formName = 'theform') => {
+    const $form = document.getElementById(formName)
+    $form.addEventListener('blur', function(event) {
+        if (event.target.value !== ''){
+            event.target.classList.add('filled')
+        } else {
+            event.target.classList.remove('filled')
+        }
+    }, true)
 
     $form.addEventListener('submit', Validate, true)
 }

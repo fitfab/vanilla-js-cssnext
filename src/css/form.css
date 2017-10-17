@@ -65,4 +65,15 @@
         background-position: 130px 50%;
     }
 
+    &.error {
+
+        & input {
+            border-color: red;
+        }
+
+        & label {
+            color: red;
+        }
+    }
+
 }
