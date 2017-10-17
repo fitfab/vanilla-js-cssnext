@@ -9,10 +9,9 @@ body {
     font-family: 'Sailec', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    max-width: 980px;
+    max-width: 760px;
     min-width: 320px;
     margin: 0 auto;
-    height:100vh;
 
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
@@ -64,6 +63,11 @@ body {
         box-sizing: border-box;
         max-width: 320px;
         min-width: 300px;
+
+        @media (width >= 300px) and (width <= 767px) {
+            margin: 20px auto;
+        }
+
         & h1 {
             text-align: center;
             margin: 0;
