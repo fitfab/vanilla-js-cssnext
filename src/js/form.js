@@ -27,7 +27,6 @@ export const Validate = (event) => {
     inputs.forEach( input => {
 
         if(input.name === 'email') {
-
             if (!isEmail(input.value)) {
                 input.parentElement.classList.add('error')
                 input.nextElementSibling.innerHTML = 'Invalid Email'
@@ -62,6 +61,7 @@ export const isPassword = (value) => {
 
 export const formInit = (formName = 'theform') => {
     const $form = document.getElementById(formName)
+    FixAutoFill()
     $form.addEventListener('blur', function(event) {
         if (event.target.value !== ''){
             event.target.classList.add('filled')
