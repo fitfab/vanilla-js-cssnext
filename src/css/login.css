@@ -108,31 +108,38 @@ body {
             margin: 20px auto;
             padding: 0 20px;
 
+            & .logo {
+                width: 167px;
+                margin: 40px auto 40px;
+            }
+
             & .subheader {
-                margin-top: 80px;
+                text-align: center;
+                margin-top: 0;
+            }
+
+            & p {
+                text-align: center;
+            }
+
+            & button {
+                margin: auto;
+            }
+        }
+
+        & #app {
+            &.forgot-password-page {
+                & .logo {
+                    margin-top: 80px;
+                }
             }
         }
 
         & .back-link {
-            top: 20px;
+            top: 30px;
             left: 20px;
         }
-
-        & .logo {
-            width: 167px;
-            margin: 105px auto 100px;
-        }
     }
 
-    & .art-textfield {
-        margin-top: 15px;
 
-        & input {
-            &:focus + label,
-            &.filled + label {
-                transform: translate(0px,-10px);
-                font-size: 12px;
-            }
-        }
-    }
 }
